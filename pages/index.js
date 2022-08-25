@@ -64,7 +64,7 @@ export default function Home() {
           <button onClick={getDalle2}>Get 4 Images</button>
         </p>{" "}
         {error ? (
-          <div className={styles.error}>Something went wrong. Try again.</div>
+          <div className={styles.error}>Something went wrong. Try again. SKI. doing well?  <p>1915394858</p></div>
         ) : (
           <></>
         )}{" "}
@@ -73,6 +73,17 @@ export default function Home() {
           {results.map((result) => {
             return (
               <div className={styles.card}>
+                <img
+                  className={styles.imgPreview}
+                  src={result.generation.image_path}
+                />
+                <img
+                  className={styles.imgPreview}
+                  src={result.generation.image_path} 
+                />
+                <img
+                  className={styles.imgPreview}
+                  src={result.generation.image_path}                />
                 <img
                   className={styles.imgPreview}
                   src={result.generation.image_path}
